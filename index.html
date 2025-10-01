@@ -35,7 +35,6 @@
       margin-bottom: 20px;
     }
 
-    /* تنسيق الفورم */
     form {
       display: flex;
       flex-direction: column;
@@ -76,7 +75,6 @@
       background: #005f99;
     }
 
-    /* روابط */
     .links a {
       margin: 0 10px;
       text-decoration: none;
@@ -103,6 +101,10 @@
 
     <!-- الفورم -->
     <form action="https://formsubmit.co/ahmedalslamy000@gmail.com" method="POST">
+      <!-- منع سبام -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+
       <input type="text" name="name" placeholder="اسمك" required>
       <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
       <textarea name="message" placeholder="رسالتك" required></textarea>
