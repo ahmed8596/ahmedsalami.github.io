@@ -3,10 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <title>أحمد السلامي</title>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      background: linear-gradient(135deg, #007acc, #00c6ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* تنسيق الفورم */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    button {
+      background: #007acc;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #005f99;
+    }
+
+    /* روابط */
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      color: #005f99;
+    }
+  </style>
 </head>
 <body>
-  <h1>مرحباً، أنا أحمد السلامي</h1>
-  <p>Founder & CEO، متخصص في التسويق الإلكتروني.</p>
-  <p>تواصل معي عبر البريد: yourmail@example.com</p>
+  <div class="card">
+    <h1>مرحباً، أنا أحمد السلامي</h1>
+    <p>Founder & CEO | متخصص في التسويق الإلكتروني للمتاجر</p>
+    
+    <div class="links">
+      <a href="https://www.linkedin.com/">LinkedIn</a> |
+      <a href="https://twitter.com/">Twitter</a> |
+      <a href="mailto:yourmail@example.com">Email</a>
+    </div>
+
+    <!-- الفورم -->
+    <form action="https://formsubmit.co/yourmail@example.com" method="POST">
+      <input type="text" name="name" placeholder="اسمك" required>
+      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
 </body>
 </html>
